@@ -1,10 +1,16 @@
 package org.advancedjava.scheduler;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.*;
 
 public class ScheduleTask {
+
+    private static final Logger logger = LoggerFactory.getLogger(ScheduleTask.class);
+
     public static void main(String[] args) {
-        System.out.println("hello");
+        logger.info("Start logging........");
         ScheduleTask.scheduleTaskAfterSomeDelay();
     }
 
