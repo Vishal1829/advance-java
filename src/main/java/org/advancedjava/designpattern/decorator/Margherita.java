@@ -1,0 +1,9 @@
+package org.advancedjava.designpattern.decorator;
+
+public class Margherita extends BasePizza {
+
+    @Override
+    public int cost() {
+        return 100;
+    }
+}
