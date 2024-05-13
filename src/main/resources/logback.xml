@@ -9,7 +9,8 @@
         <appender-ref ref="console"/>
     </root>
 
-    <root level="error">
+    <!-- Error logger configuration -->
+    <logger name="org.example.package.error" level="ERROR">
         <appender-ref ref="console"/>
-    </root>
+    </logger>
 </configuration>
