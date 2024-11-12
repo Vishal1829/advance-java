@@ -28,8 +28,8 @@ interface for accessing account details, transferring funds, and paying bills. T
 class, utilizes the facade methods to perform these operations without needing to manage the intricacies of individual
 services directly, enhancing code readability and maintainability.
 
-Real ex: Spring JdbcTemplate is an example of facade design pattern as we just have specify the jdbc connection url
-it will take care of it whether mysql, oracle, etc. it will handle and we can perform all db operations.
+Real ex: Spring JdbcTemplate is an example of facade design pattern as we just have to specify the jdbc connection url
+it will take care of it whether mysql, oracle, etc. it will handle, and we can perform all db operations.
 
 https://medium.com/@akshatsharma0610/facade-design-pattern-in-java-777005efc75f
  */

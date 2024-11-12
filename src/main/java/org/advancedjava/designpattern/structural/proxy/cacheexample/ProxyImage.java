@@ -2,7 +2,7 @@ package org.advancedjava.designpattern.structural.proxy.cacheexample;
 
 public class ProxyImage implements Image {
     private RealImage realImage;
-    private String filename;
+    private final String filename;
 
     public ProxyImage(String filename) {
         this.filename = filename;

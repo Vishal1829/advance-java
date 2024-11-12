@@ -48,4 +48,6 @@ most of the real work to the service object, handling only the interface or data
 
 6. Clients should use the adapter via the client interface. This will let you change or extend the adapters
 without affecting the client code.
+
+https://medium.com/@gauravswarankar/adapter-design-pattern-episode-4-bcfc87c22811
  */

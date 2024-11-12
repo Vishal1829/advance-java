@@ -1,7 +1,7 @@
 package org.advancedjava.designpattern.structural.proxy.cacheexample;
 
 public class RealImage implements Image {
-    private String filename;
+    private final String filename;
 
     public RealImage(String filename) {
         this.filename = filename;
@@ -12,6 +12,7 @@ public class RealImage implements Image {
         System.out.println("Loading image: " + filename);
     }
 
+    @Override
     public void display() {
         System.out.println("Displaying image: " + filename);
     }
