@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.structural.adapter;
+package org.advancedjava.designpattern.structural.adapter.weightmachine;
 
 public class WeightMachineImpl implements WeightMachine {
     @Override
