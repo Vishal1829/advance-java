@@ -33,4 +33,7 @@ What's the problem with the HotelRoom class?
 
 Visitor Pattern: Allows adding new operations to existing classes without modifying them and
 encourage OPEN/CLOSED principle.
+
+Note: check this
+https://medium.com/@alxkm/visitor-pattern-in-java-0be5fa5af5d7
  */

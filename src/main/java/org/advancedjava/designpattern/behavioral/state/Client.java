@@ -25,4 +25,7 @@ state of the context object.
 4. Client: The client code interacts with the context object and triggers state transitions based
 on certain conditions or events.
 
+Note: check this
+https://medium.com/@rahulmora007/managing-multiple-screens-of-a-game-using-state-design-pattern-62c8fdefab05
+
  */
