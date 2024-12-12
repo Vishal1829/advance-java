@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.visitor;
+package org.advancedjava.designpattern.behavioral.visitor.hotelex;
 
 
 //What's the problem with the below class?

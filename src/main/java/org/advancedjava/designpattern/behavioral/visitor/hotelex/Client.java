@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.visitor;
+package org.advancedjava.designpattern.behavioral.visitor.hotelex;
 
 public class Client {
     public static void main(String[] args) {

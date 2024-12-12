@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.visitor;
+package org.advancedjava.designpattern.behavioral.visitor.hotelex;
 
 public class RoomMaintenanceVisitor implements RoomVisitor {
     @Override

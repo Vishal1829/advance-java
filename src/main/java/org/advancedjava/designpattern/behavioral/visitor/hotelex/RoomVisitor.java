@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.visitor;
+package org.advancedjava.designpattern.behavioral.visitor.hotelex;
 
 public interface RoomVisitor {
     void visit(SingleRoom singleRoomObj);

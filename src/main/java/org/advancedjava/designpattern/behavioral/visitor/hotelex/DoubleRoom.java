@@ -1,6 +1,6 @@
-package org.advancedjava.designpattern.behavioral.visitor;
+package org.advancedjava.designpattern.behavioral.visitor.hotelex;
 
-public class SingleRoom implements RoomElement {
+public class DoubleRoom implements RoomElement {
 
     public int roomPrice = 0;
 
