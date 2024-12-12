@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.command;
+package org.advancedjava.designpattern.behavioral.command.acex;
 
 public class Client {
     public static void main(String[] args) {
