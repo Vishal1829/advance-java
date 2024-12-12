@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.observer;
+package org.advancedjava.designpattern.behavioral.observer.blogex;
 
 public class Client {
     public static void main(String[] args) {

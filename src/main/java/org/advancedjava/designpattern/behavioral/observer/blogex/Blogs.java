@@ -1,4 +1,4 @@
-package org.advancedjava.designpattern.behavioral.observer;
+package org.advancedjava.designpattern.behavioral.observer.blogex;
 
 import lombok.Getter;
 
