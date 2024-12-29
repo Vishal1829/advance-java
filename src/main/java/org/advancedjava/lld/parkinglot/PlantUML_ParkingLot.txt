@@ -1,0 +1,109 @@
+@startuml
+' Classes
+class Car {
+    - regNo: String
+    - color: Color
+}
+
+class Slot {
+    - slotNo: int
+    - status: SlotStatus
+    - car: Car
+}
+
+class SlotManager {
+    - slots: List<Slot>
+    + getSlots(): List<Slot>
+    + bookSlot(slot: Slot, car: Car): String
+    + freeSlot(slotNo: int): String
+    + getRegistrationNumbersByColor(color: Color): List<String>
+    + getSlotNumberByRegNo(regNo: String): int
+    + getSlotNumbersByColor(color: Color): List<Integer>
+}
+
+class ParkingLot {
+    - slotManager: SlotManager
+    - parkingStrategy: ParkingStrategy
+    + park(car: Car): String
+    + unPark(slotNo: int): String
+    + getRegistrationNumbersByColor(color: Color): List<String>
+    + getSlotNumberByRegNo(regNo: String): int
+    + getSlotNumbersByColor(color: Color): List<Integer>
+}
+
+class ParkingStrategyFactory {
+    + getParkingStrategy(strategyType: String): ParkingStrategy
+}
+
+class ParkingStrategy {
+    + findSlot(slots: List<Slot>): Optional<Slot>
+}
+
+class NearestSlotStrategy {
+    + findSlot(slots: List<Slot>): Optional<Slot>
+}
+
+class FurthestSlotStrategy {
+    + findSlot(slots: List<Slot>): Optional<Slot>
+}
+
+class Command {
+    + execute(): void
+}
+
+class ParkCarCommand {
+    + execute(): void
+}
+
+class EmptySlotCommand {
+    + execute(): void
+}
+
+class GetRegistrationNumbersByColorCommand {
+    + execute(): void
+}
+
+class GetSlotByRegistrationNumberCommand {
+    + execute(): void
+}
+
+class GetSlotNumbersByColorCommand {
+    + execute(): void
+}
+
+class ExitCommand {
+    + execute(): void
+}
+
+' Enums
+enum Color {
+    RED
+    BLUE
+    BLACK
+}
+
+enum SlotStatus {
+    FREE
+    BOOKED
+}
+
+' Relationships (Has-a relationships)
+Car --> Color : "has"
+Slot --> SlotStatus : "has"
+Slot --> Car : "has"
+ParkingLot --> SlotManager : "has"
+ParkingLot --> ParkingStrategy : "has"
+SlotManager --> Slot : "has"
+ParkingStrategyFactory ..> ParkingStrategy : "creates"
+ParkingLot --> Command : "executes"
+Command <|.. ParkCarCommand
+Command <|.. EmptySlotCommand
+Command <|.. GetRegistrationNumbersByColorCommand
+Command <|.. GetSlotByRegistrationNumberCommand
+Command <|.. GetSlotNumbersByColorCommand
+Command <|.. ExitCommand
+
+' Inheritance (ParkingStrategy and its implementations)
+ParkingStrategy <|.. NearestSlotStrategy
+ParkingStrategy <|.. FurthestSlotStrategy
+@enduml
