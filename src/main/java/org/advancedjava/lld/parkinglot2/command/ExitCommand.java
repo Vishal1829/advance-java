@@ -1,4 +1,4 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.command;
 
 public class ExitCommand implements Command {
 

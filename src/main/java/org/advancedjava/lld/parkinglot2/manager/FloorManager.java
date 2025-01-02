@@ -1,6 +1,8 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.manager;
 
 import lombok.Getter;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
+import org.advancedjava.lld.parkinglot2.strategy.SlotDistributionStrategy;
 
 import java.util.HashMap;
 import java.util.Map;

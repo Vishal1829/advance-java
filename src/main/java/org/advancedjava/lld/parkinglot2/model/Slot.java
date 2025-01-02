@@ -1,4 +1,4 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,12 +1,12 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.model;
 
-public class Bike implements Vehicle {
+public class Truck implements Vehicle {
     private final VehicleType type;
     private final String regNo;
     private final Color color;
 
-    public Bike(String regNo, Color color) {
-        this.type = VehicleType.BIKE;
+    public Truck(String regNo, Color color) {
+        this.type = VehicleType.TRUCK;
         this.regNo = regNo;
         this.color = color;
     }

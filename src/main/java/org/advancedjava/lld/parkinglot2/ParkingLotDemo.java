@@ -1,5 +1,12 @@
 package org.advancedjava.lld.parkinglot2;
 
+import org.advancedjava.lld.parkinglot2.command.CommandInvoker;
+import org.advancedjava.lld.parkinglot2.factory.CommandFactory;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
+import org.advancedjava.lld.parkinglot2.strategy.CustomSlotDistributionStrategy;
+import org.advancedjava.lld.parkinglot2.strategy.DefaultSlotDistributionStrategy;
+import org.advancedjava.lld.parkinglot2.strategy.SlotDistributionStrategy;
+
 import java.util.*;
 
 public class ParkingLotDemo {

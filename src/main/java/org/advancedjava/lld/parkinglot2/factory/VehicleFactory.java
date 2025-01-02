@@ -1,4 +1,11 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.factory;
+
+import org.advancedjava.lld.parkinglot2.model.Color;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
+import org.advancedjava.lld.parkinglot2.model.Bike;
+import org.advancedjava.lld.parkinglot2.model.Car;
+import org.advancedjava.lld.parkinglot2.model.Truck;
+import org.advancedjava.lld.parkinglot2.model.Vehicle;
 
 public class VehicleFactory {
     public static Vehicle createVehicle(String vehicleType, String regNo, String color) {

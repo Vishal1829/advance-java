@@ -1,4 +1,8 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.command;
+
+import org.advancedjava.lld.parkinglot2.ParkingLot;
+import org.advancedjava.lld.parkinglot2.ParkingLotRegistry;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
 
 public class DisplayCommand implements Command {
     private final ParkingLotRegistry parkingLotRegistry;

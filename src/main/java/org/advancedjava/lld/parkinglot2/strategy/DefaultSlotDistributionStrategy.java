@@ -1,4 +1,6 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.strategy;
+
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
 
 import java.util.EnumMap;
 import java.util.Map;

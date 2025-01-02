@@ -1,6 +1,14 @@
 package org.advancedjava.lld.parkinglot2;
 
 import lombok.Getter;
+import org.advancedjava.lld.parkinglot2.manager.FloorManager;
+import org.advancedjava.lld.parkinglot2.manager.TicketManager;
+import org.advancedjava.lld.parkinglot2.model.Slot;
+import org.advancedjava.lld.parkinglot2.model.Vehicle;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
+import org.advancedjava.lld.parkinglot2.strategy.NearestFloorAndSlot;
+import org.advancedjava.lld.parkinglot2.strategy.ParkingStrategy;
+import org.advancedjava.lld.parkinglot2.strategy.SlotDistributionStrategy;
 
 public class ParkingLot {
     @Getter

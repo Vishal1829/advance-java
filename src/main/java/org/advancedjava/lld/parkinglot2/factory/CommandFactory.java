@@ -1,4 +1,8 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.factory;
+
+import org.advancedjava.lld.parkinglot2.*;
+import org.advancedjava.lld.parkinglot2.command.*;
+import org.advancedjava.lld.parkinglot2.strategy.SlotDistributionStrategy;
 
 public class CommandFactory {
     private static volatile CommandFactory commandFactoryInstance;

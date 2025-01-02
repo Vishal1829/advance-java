@@ -1,4 +1,4 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.model;
 
 public interface Vehicle {
     VehicleType getVehicleType();

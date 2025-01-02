@@ -1,4 +1,7 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.command;
+
+import org.advancedjava.lld.parkinglot2.ParkingLot;
+import org.advancedjava.lld.parkinglot2.ParkingLotRegistry;
 
 public class UnparkVehicleCommand implements Command {
     private final ParkingLotRegistry parkingLotRegistry;

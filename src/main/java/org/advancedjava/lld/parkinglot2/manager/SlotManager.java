@@ -1,4 +1,10 @@
-package org.advancedjava.lld.parkinglot2;
+package org.advancedjava.lld.parkinglot2.manager;
+
+import org.advancedjava.lld.parkinglot2.model.Slot;
+import org.advancedjava.lld.parkinglot2.model.SlotStatus;
+import org.advancedjava.lld.parkinglot2.model.Vehicle;
+import org.advancedjava.lld.parkinglot2.model.VehicleType;
+import org.advancedjava.lld.parkinglot2.strategy.SlotDistributionStrategy;
 
 import java.util.ArrayList;
 import java.util.EnumMap;
