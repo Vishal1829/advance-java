@@ -13,17 +13,10 @@ public class FloorManager {
     public FloorManager(int noOfFloors) {
         this.noOfFloors = noOfFloors;
         floorSlotsMap = new HashMap<>();
-//        for (int i = 1; i <= noOfFloors; i++) {
-//            floorSlotsMap.put(i, new SlotManager(noOfSlots));
-//        }
     }
 
-//    public void addFloor(int floorNumber, int noOfSlots) {
-//        floorSlotsMap.put(floorNumber, new SlotManager(noOfSlots));
-//    }
-
     public void addFloor(int floorNumber, int numSlots, SlotDistributionStrategy distributionStrategy) {
-        floorSlotsMap.put(floorNumber, new SlotManager(numSlots, distributionStrategy));
+        floorSlotsMap.put(floorNumber, new SlotManager(floorNumber, numSlots, distributionStrategy));
     }
 
     public void displayFreeSlotsCountPerFloor(VehicleType vehicleType) {

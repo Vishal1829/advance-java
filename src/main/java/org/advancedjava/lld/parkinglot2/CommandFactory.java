@@ -19,9 +19,9 @@ public class CommandFactory {
         return commandFactoryInstance;
     }
 
-    public Command createCreateParkingLotCommand(String parkingLotId, int noOfFloors, int noOfSlotsPerFloor,
+    public Command createCreateParkingLotCommand(String parkingLotId, int noOfFloors, int[] slotsPerFloor,
                                                  SlotDistributionStrategy distributionStrategy) {
-        return new CreateParkingLotCommand(parkingLotRegistry, parkingLotId, noOfFloors, noOfSlotsPerFloor, distributionStrategy);
+        return new CreateParkingLotCommand(parkingLotRegistry, parkingLotId, noOfFloors, slotsPerFloor, distributionStrategy);
     }
 
     public Command createParkVehicleCommand(String parkingLotId, String vehicleType, String regNo, String color) {
@@ -43,11 +43,5 @@ public class CommandFactory {
 //    public Command createFindVehicleCommand(String regNo) {
 //        validateParkingLot();
 //        return new FindVehicleCommand(parkingLot, regNo);
-//    }
-
-//    private void validateParkingLot() {
-//        if (parkingLot == null) {
-//            throw new IllegalStateException("Please create a parking lot first.");
-//        }
 //    }
 }

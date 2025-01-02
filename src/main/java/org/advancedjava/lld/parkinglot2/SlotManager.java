@@ -9,13 +9,13 @@ import java.util.stream.Collectors;
 public class SlotManager {
     private final Map<VehicleType, List<Slot>> slotsMap;
 
-    public SlotManager(int numSlots, SlotDistributionStrategy distributionStrategy) {
+    public SlotManager(int floorNumber, int numSlots, SlotDistributionStrategy distributionStrategy) {
         slotsMap = new EnumMap<>(VehicleType.class);
-        initializeSlots(numSlots, distributionStrategy);
+        initializeSlots(floorNumber, numSlots, distributionStrategy);
     }
 
-    private void initializeSlots(int numSlots, SlotDistributionStrategy distributionStrategy) {
-        Map<VehicleType, Integer> distribution = distributionStrategy.getDistribution(numSlots);
+    private void initializeSlots(int floorNumber, int numSlots, SlotDistributionStrategy distributionStrategy) {
+        Map<VehicleType, Integer> distribution = distributionStrategy.getDistribution(floorNumber, numSlots);
         int slotNumber = 1;
         for (Map.Entry<VehicleType, Integer> entry : distribution.entrySet()) {
             VehicleType vehicleType = entry.getKey();

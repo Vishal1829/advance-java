@@ -9,12 +9,12 @@ public class ParkingLot {
     private ParkingStrategy parkingStrategy;
     private TicketManager ticketManager;
 
-    public ParkingLot(String parkingLotId, int noOfFloors, int noOfSlotsPerFloor,
+    public ParkingLot(String parkingLotId, int noOfFloors, int[] slotsPerFloor,
                       SlotDistributionStrategy distributionStrategy) {
-        initialize(parkingLotId, noOfFloors, noOfSlotsPerFloor, distributionStrategy);
+        initialize(parkingLotId, noOfFloors, slotsPerFloor, distributionStrategy);
     }
 
-    private void initialize(String parkingLotId, int noOfFloors, int noOfSlotsPerFloor,
+    private void initialize(String parkingLotId, int noOfFloors, int[] slotsPerFloor,
                            SlotDistributionStrategy distributionStrategy) {
         this.parkingLotId = parkingLotId;
         this.floorManager = new FloorManager(noOfFloors);
@@ -23,7 +23,8 @@ public class ParkingLot {
 
         // Add floors and slots to the parking lot
         for (int i = 1; i <= noOfFloors; i++) {
-            floorManager.addFloor(i, noOfSlotsPerFloor, distributionStrategy);
+            int numSlots = slotsPerFloor[i - 1];
+            floorManager.addFloor(i, numSlots, distributionStrategy);
         }
     }
 

@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class DefaultSlotDistributionStrategy implements SlotDistributionStrategy {
     @Override
-    public Map<VehicleType, Integer> getDistribution(int numSlots) {
+    public Map<VehicleType, Integer> getDistribution(int floorNumber, int numSlots) {
         Map<VehicleType, Integer> distribution = new EnumMap<>(VehicleType.class);
         distribution.put(VehicleType.TRUCK, 1);
         distribution.put(VehicleType.BIKE, 2);
